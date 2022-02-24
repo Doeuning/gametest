@@ -111,7 +111,7 @@ var gameState = function(){
     function dieAction(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         dieAnimation = requestAnimationFrame(dieAction);
-        diffPosition = '진짜 못하시네요... 실망입니다. - 당신의 컴퓨터';
+        diffPosition = '실망입니다...';
         document.getElementById('diff').innerHTML = diffPosition;
     
         if (dying) {

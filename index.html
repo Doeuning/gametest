@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./common.css">
 </head>
 <body>
     <canvas id="canvas"></canvas>
@@ -16,38 +17,5 @@
         <h1 id="score"></h1>
     </div>
     <script src="main.js"></script>
-    <style>
-        body {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-        #canvas {
-            position: fixed;
-            top: 20%;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            background: url(./bg.png) 0 200px repeat-x;            
-        }
-        .txt {
-            position: fixed;
-            top: 30%;
-            right: 0;
-            left: 0;
-            text-align: center;
-            transform: translate(0, -50%);
-        }
-        #score {
-            color: red;
-        }
-        .over {
-            background: #000;
-            filter :invert(100%);
-        }
-    </style>
 </body>
 </html>

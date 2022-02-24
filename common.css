@@ -1,0 +1,42 @@
+@charset 'utf-8';
+body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#canvas {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: url(./bg.png) 0 200px repeat-x;            
+}
+.txt {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+#score {
+    color: red;
+}
+.over {
+    background: #000;
+    filter :invert(100%);
+}
+.over #diff {
+    animation: fadeOut 3s ease-in-out;
+}
+
+@keyframes fadeOut {
+    to {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
