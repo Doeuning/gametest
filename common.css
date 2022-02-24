@@ -13,7 +13,8 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: url(./bg.png) 0 200px repeat-x;            
+    background: url(./bg.png) 0 200px repeat-x;        
+    animation: moveBg 3s linear infinite;    
 }
 .txt {
     position: fixed;
@@ -33,10 +34,17 @@ body {
 .over #diff {
     animation: fadeOut 3s ease-in-out;
 }
+.over #canvas {
+    animation: none;
+}
 
 @keyframes fadeOut {
     to {
         transform: scale(100);
         opacity: 0;
     }
+}
+
+@keyframes moveBg {
+    to {background-position: -512px 200px;}
 }
