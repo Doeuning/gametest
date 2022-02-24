@@ -9,15 +9,44 @@
 <body>
     <canvas id="canvas"></canvas>
     <canvas id="canvas2"></canvas>
+    <div class="txt">
+        <h3 id="tit"></h3>
+        <h3 id="tit2"></h3>
+        <h4 id="diff"></h4>
+        <h1 id="score"></h1>
+    </div>
     <script src="main.js"></script>
     <style>
-        #canvas2 {
+        body {
             position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+        }
+        #canvas {
+            position: fixed;
+            top: 20%;
+            right: 0;
+            bottom: 0;
+            left: 0;
             z-index: -1;
+            background: url(./bg.png) 0 200px repeat-x;            
+        }
+        .txt {
+            position: fixed;
+            top: 30%;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translate(0, -50%);
+        }
+        #score {
+            color: red;
+        }
+        .over {
+            background: #000;
+            filter :invert(100%);
         }
     </style>
 </body>
